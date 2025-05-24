@@ -3,6 +3,7 @@ on:
   push:
 jobs:
   download-artifact:
+    needs: upload-artifacts
     name: job to download artifact
     runs-on: ubuntu-latest
     steps:
